@@ -83,3 +83,10 @@
 | 🔍 | `:mag:` | Amélioration de la recherche ou du filtrage |
 | 📊 | `:bar_chart:` | Ajout ou modification de statistiques |
 | 📅 | `:calendar:` | Ajout ou modification d'un calendrier |
+
+### Faire une clé ssh pour GitHub (sur Mac)
+
+1. Générer une clé SSH : `ssh-keygen -t ed25519 -C "your_email@example.com"`
+2. Ajouter la clé SSH à l'agent SSH : `eval "$(ssh-agent -s)"` puis `ssh-add ~/.ssh/id_ed25519`
+3. Copier la clé publique : `pbcopy < ~/.ssh/id_ed25519.pub`
+4. Ajouter la clé publique à votre compte GitHub : Allez dans "Settings" > "SSH and GPG keys" > "New SSH key" et collez la clé publique.
