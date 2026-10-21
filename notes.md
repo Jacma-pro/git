@@ -88,5 +88,5 @@
 
 1. Générer une clé SSH : `ssh-keygen -t ed25519 -C "your_email@example.com"`
 2. Ajouter la clé SSH à l'agent SSH : `eval "$(ssh-agent -s)"` puis `ssh-add ~/.ssh/id_ed25519`
-3. Copier la clé publique : `pbcopy < ~/.ssh/id_ed25519.pub`
+3. Copier la clé publique : `pbcopy < ~/.ssh/id_ed25519.pub` (ou `cat ~/.ssh/id_ed25519.pub` pour l'afficher dans le terminal)
 4. Ajouter la clé publique à votre compte GitHub : Allez dans "Settings" > "SSH and GPG keys" > "New SSH key" et collez la clé publique.
